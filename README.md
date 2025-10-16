@@ -1,19 +1,23 @@
-# Pinguim Clothing Menu
-Simple FiveM clothing menu script
+# 5p_clothes - Clothing Menu
 
-# Preview
-<img width="412" height="592" alt="image" src="https://github.com/user-attachments/assets/9ef8813e-9a2c-421d-b86c-c0ed599d2ef2" />
-<img width="426" height="605" alt="image" src="https://github.com/user-attachments/assets/462ded01-4f22-42f0-8433-743c1207811f" />
+- English:
 
+This is a free resource from Pinguim Scripts.
 
-## Features
+Includes a configuration file where you can edit the index of clothing components to remove them (if you have mods on your server).
+You can contact us through Discord (https://discord.gg/6emkjrTHze).
 
-* Simple and responsive NUI interface
-* Complete clothing system with all body parts
-* Dynamic hover labels showing clothing part names
-* Interactive visual states for active and hover effects
-* Integrated reset button to clear all selections
-* Optimized NUI ↔ Lua communication using `$.post`
-* Quick menu close with ESC or Backspace
-* Persistent visual state until reset
-* Easy integration with any framework (ESX, QBCore, Standalone)
+Feature preview: https://youtu.be/oAW0de2bCqk
+
+We hope you enjoy it!
+
+- Português
+
+Este é um resource gratuito do Pinguim Scripts.
+
+Inclui um ficheiro de configuração onde pode editar o índice dos componentes de vestuário para os remover (caso tenha mods no servidor).
+Pode contactar-nos através do Discord (https://discord.gg/6emkjrTHze).
+
+Antevisão do recurso: https://youtu.be/oAW0de2bCqk
+
+Esperamos que goste!

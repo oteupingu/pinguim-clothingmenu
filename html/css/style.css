@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap');
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* === MENU PRINCIPAL === */
+.menu {
+    position: absolute;
+    top: 22%;
+    /* 🔹 ligeiramente mais baixo */
+    right: 2%;
+    width: 17.5vw;
+    height: 26vw;
+    /* 🔹 mais alto */
+    background: rgba(0, 0, 0, 0.72);
+    border-radius: 0.6vw;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    padding: 0.8vw 0.8vw 1.2vw 0.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === TÍTULO === */
+.menu h1 {
+    width: 100%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.25vw;
+    text-align: left;
+    margin: 0.3vw 0 0.9vw 0.6vw;
+    letter-spacing: 0.03vw;
+}
+
+/* === BOTÃO RESET === */
+.reset {
+    position: absolute;
+    top: 0.8vw;
+    right: 1vw;
+    width: 2vw;
+    height: 2vw;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 0.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset:hover {
+    background: #2b6b97;
+}
+
+.reset i {
+    font-size: 1vw;
+}
+
+/* === ITENS (GRADE) === */
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6vw;
+    justify-items: center;
+}
+
+/* === ITEM INDIVIDUAL === */
+.item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5vw;
+    width: 5.3vw;
+    /* 🔹 aumentados */
+    height: 5.3vw;
+    /* 🔹 aumentados */
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    /* Ícone + nome empilhados */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tooltip escondido por padrão */
+.item-label {
+    position: absolute;
+    bottom: 110%;
+    /* aparece acima do ícone */
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8vw;
+    padding: 0.25vw 0.6vw;
+    border-radius: 0.3vw;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(5px);
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Mostra ao passar o rato */
+.item:hover .item-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Opcional: pequena setinha abaixo do retângulo */
+.item-label::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0.35vw;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+}
+
+
+.item i {
+    font-size: 2.6vw;
+    /* 🔹 ícone acompanha o aumento */
+}
+
+.item:hover {
+    background-color: #2b6b97;
+    transform: scale(1.05);
+}
+
+.item.active {
+    background-color: #2b6b97;
+}
+
+/* === RESPONSIVO === */
+@media screen and (max-width: 1366px) {
+    .menu {
+        width: 18vw;
+        height: 31vw;
+        top: 23%;
+    }
+
+    .menu h1 {
+        font-size: 1.3vw;
+    }
+
+    .item {
+        width: 5.6vw;
+        height: 5.6vw;
+    }
+
+    .item i {
+        font-size: 2.3vw;
+    }
+}
