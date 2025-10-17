@@ -3,12 +3,10 @@ Simple FiveM clothing menu script.
 
 
 # Preview
-<img width="412" height="592" alt="image" src="https://github.com/user-attachments/assets/8a51cdcd-bf45-4b73-81eb-957dd3f7930c" />
-<img width="426" height="605" alt="image" src="https://github.com/user-attachments/assets/911a7acf-185a-4b58-ae4b-ea27affce7f6" />
-
+<img width="404" height="575" alt="image" src="https://github.com/user-attachments/assets/60895440-1dd6-48bb-8633-3a6da9d87aec" />
+<img width="412" height="583" alt="image" src="https://github.com/user-attachments/assets/b6e6c76b-9736-4cca-9bce-677165be6e20" />
 
 ## Features
-
 * Simple and responsive NUI interface
 * Complete clothing system with all body parts
 * Dynamic hover labels showing clothing part names
@@ -17,6 +15,9 @@ Simple FiveM clothing menu script.
 * Optimized NUI ↔ Lua communication using `$.post`
 * Quick menu close with ESC or Backspace
 * Persistent visual state until reset
-* Easy integration with any framework (ESX, QBCore, Standalone)
-
+* Easy integration with any framework (QBCore, Qbox)
+* Multi-language support with dynamic locale loading (`locales/*.json`)
+  * Easily add new languages by creating JSON files (e.g. `en.json`, `pt.json`)
+  * Configurable default language via `Config.Language`
+  * Automatic fallback to English if the selected locale is missing
 
