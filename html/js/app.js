@@ -12,16 +12,25 @@ function updateItemState(id, active) {
     }
 }
 
-// listener NUI
+// listener NUI unificado
 window.addEventListener('message', function (event) {
-    const item = event.data;
+    const data = event.data;
 
-    switch (item.action) {
+    switch (data.action) {
         case 'show':
             $('.container').fadeIn(500);
 
             // aplica estado salvo
             Object.keys(itemStates).forEach(id => updateItemState(id, itemStates[id]));
+
+            // aplica traduções se existirem
+            if (data.translations) {
+                document.querySelector('.menu-title').innerText = data.translations.menu_title;
+                document.querySelectorAll('.item-label').forEach(el => {
+                    const key = el.getAttribute('data-locale');
+                    if (data.translations[key]) el.innerText = data.translations[key];
+                });
+            }
             break;
 
         case 'hide':
