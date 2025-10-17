@@ -20,4 +20,5 @@ files {
   'html/css/*.css',
   'html/js/*.js',
   'html/fonts/*.ttf',
+  'locales/*.json'
 }
