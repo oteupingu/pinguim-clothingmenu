@@ -20,3 +20,4 @@ Simple FiveM clothing menu script
   * Easily add new languages by creating JSON files (e.g. `en.json`, `pt.json`)
   * Configurable default language via `Config.Language`
   * Automatic fallback to English if the selected locale is missing
+
